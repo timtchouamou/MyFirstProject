@@ -302,6 +302,10 @@ header .row {
     width: 41.6667%;
 }
 
+.header__description--para {
+    margin: 32px 0;
+}
+
 .header__email {
     width: 100%;
     max-width: 448px;
@@ -340,6 +344,11 @@ header .row {
     font-weight: 700;
     font-size: 16px;
     transition: all 300ms;
+}
+
+button {
+    cursor: pointer;
+    border: none;
 }
 
 .header__customers--title {
@@ -1303,6 +1312,23 @@ MOBILE RESPONSIVENESS ↓
     .testimonials__description {
         width: calc(100% - 41.6667%);
     }
+
+    header .row {
+        align-items: flex-end;
+    }
+
+    .header__customers {
+        padding-right: 64px;
+    }
+
+    .header__img--wrapper {
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .header__img {
+        max-width: 512px;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -1314,7 +1340,35 @@ MOBILE RESPONSIVENESS ↓
     .section__para {
         font-size: 16px;
     }
+    header .row {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .header__description {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__description, .header__img--wrapper {
+        width: 100%;
+        max-width: 512px;
+        margin: 0 auto;
+    }
+
+    .header__customers--title, .header__img--wrapper {
+        margin-top: 48px;
+    }
+
+    .header__customers {
+        padding-right: 0px;
+    }
+
+    .header__customers--title, .header__img--wrapper {
+        margin-top: 48px;
+    }
     .values__list {
         flex-direction: column;
         max-width: 320px;
@@ -1456,6 +1510,31 @@ MOBILE RESPONSIVENESS ↓
         margin-top: 48px;
     }
 
+    .header__email {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .header__email--input {
+        position: static;
+        padding: 16px 0;
+        padding-left: 32px;
+        line-height: 1.5;
+    }
+
+    .header__email--btn {
+        width: 100%;
+        padding: 16px 0;
+        margin: 16px 0;
+        margin-bottom: 0px;
+        line-height: 1.5;
+    }
+
+
+    .header__customers--title {
+        font-size: 14px;
+        letter-spacing: 0.05em;
+    }
     #features .section__title, #pricing .section__title {
         font-size: 36px;
     }
